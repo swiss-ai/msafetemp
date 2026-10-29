@@ -9,6 +9,14 @@ var ROOT = document.documentElement;
 var RM = window.matchMedia("(prefers-reduced-motion: reduce)");
 var SVGNS = "http://www.w3.org/2000/svg";
 
+/* #top is the sticky header, which is always "in view", so the browser never scrolls to it */
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest('a[href="#top"]');
+  if (!a) return;
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: RM.matches ? "auto" : "smooth" });
+});
+
 /* ---------------- helpers ---------------- */
 function $(s, r) { return (r || document).querySelector(s); }
 function el(tag, attrs, kids) {
