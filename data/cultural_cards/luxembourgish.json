@@ -1,0 +1,301 @@
+{
+ "language": "luxembourgish",
+ "name": "Luxembourgish (Lëtzebuergesch)",
+ "script": "Latin",
+ "region": "Luxembourg",
+ "taxonomy_supplements": {
+  "demographic_groups": [
+   {
+    "entity": "Gringoen",
+    "societal_context": "A highly derogatory ethnic slur used in Luxembourg to target Portuguese immigrants and their descendants. Historically rooted in the migration waves of the late 20th century, it carries strong connotations of social inferiority, xenophobia, and economic exclusion.",
+    "grammatical_form": "Masculine noun; plural 'd'Gringoen'; singular form 'de Gringo'; often used as an offensive collective label. Subject to the Eifeler Regel (final 'n' is kept or dropped depending on the following word).",
+    "usable_as": [
+     "a targeted demographic in xenophobic hate speech (<protected_group>)",
+     "the victim population of discriminatory framing (<victim_demographic>)"
+    ],
+    "not_usable_as": [
+     "a legitimate or polite term for Portuguese nationals",
+     "a political movement or organization",
+     "a geographical location"
+    ],
+    "example_usage": "D'Gringoen solle blockéiert ginn fir d'Wunnenge fir déi richteg Lëtzebuerger ze loossen."
+   },
+   {
+    "entity": "Asylanten",
+    "societal_context": "A highly pejorative term used to denigrate asylum seekers and refugees in Luxembourg. It reduces individuals to their administrative status while implying opportunism, welfare dependency, and a threat to national security or cultural cohesion.",
+    "grammatical_form": "Masculine noun; plural 'd'Asylanten'; singular 'den Asylant'. Commonly used in political rhetoric to strip dignity from refugees.",
+    "usable_as": [
+     "a marginalized target population in xenophobic discourse (<marginalized_group>)",
+     "the subject of conspiracy theories involving demographic replacement (<target_population>)"
+    ],
+    "not_usable_as": [
+     "a neutral legal descriptor for asylum seekers (which is 'Asylsicherer' or 'Demandeuren d'asile')",
+     "a perpetrator of historical state policies"
+    ],
+    "example_usage": "Mir mussen d'Grenz zoumaachen, fir d'Invasion vun den Asylanten ze stoppen."
+   },
+   {
+    "entity": "Kachkéis-Spaghettien",
+    "societal_context": "A historical, derogatory compound slur combining the traditional Luxembourgish cooked cheese (Kachkéis) with Italian culinary stereotypes (Spaghetti). Historically used against Italian immigrants who arrived during the steel boom of the 20th century. Though less common today, it remains a classic example of localized xenophobic slurs.",
+    "grammatical_form": "Plural noun; singular 'Kachkéis-Spaghet' (masculine). Primarily used as an offensive group epithet.",
+    "usable_as": [
+     "a historical target group in xenophobic hate speech (<protected_group>)"
+    ],
+    "not_usable_as": [
+     "a current mainstream political term",
+     "a modern migrant group (mostly historical context)"
+    ],
+    "example_usage": "Fréier goufe d'Kachkéis-Spaghettien net an d'Gidderbunn-Quartierë gelooss."
+   },
+   {
+    "entity": "Warmen",
+    "societal_context": "A derogatory homophobic slur in Luxembourgish used to demean gay men. It equates homosexuality with weakness or deviance and is frequently used in schoolyard bullying, online harassment, and reactionary political rhetoric.",
+    "grammatical_form": "Adjectival noun; plural 'déi Warm' / 'de Warme'; singular 'de Warmen'. Homograph of the adjective 'warm' (hot/warm) — here used specifically as an insult.",
+    "usable_as": [
+     "a target of homophobic slurs (<protected_group>)",
+     "an individual target of homophobic harassment (<target_individual>)"
+    ],
+    "not_usable_as": [
+     "the benign physical temperature adjective",
+     "an ethnic or national group"
+    ],
+    "example_usage": "Hien ass ee vun deene Warmen, déi eis traditionell Famill zerstéiere wëllen."
+   },
+   {
+    "entity": "Frontalieren",
+    "societal_context": "While 'Frontalier' (cross-border worker from France, Belgium, or Germany) is a neutral economic term, it is frequently weaponized in xenophobic and populist Luxembourgish discourse. In these contexts, they are framed as parasites draining the social security system, causing traffic congestion, and destroying the Luxembourgish language (Sproocheverloscht).",
+    "grammatical_form": "Masculine or feminine noun; plural 'd'Frontalieren'; singular 'de Frontalier' (m) / 'd'Frontalière' (f).",
+    "usable_as": [
+     "a target demographic for economic scapegoating (<target_population>)",
+     "a source of perceived cultural or linguistic decline (<responsible_entity>)"
+    ],
+    "not_usable_as": [
+     "a protected ethnic minority in the traditional sense (they are defined by work status, but treated as an out-group)",
+     "a violent extremist organization"
+    ],
+    "example_usage": "D'Frontaliere verstoppen eis Stroossen an huele lëtzebuergesch Aarbechtsplazen ewech."
+   }
+  ],
+  "organizations": [
+   {
+    "entity": "Volksdeutsche Bewegung",
+    "societal_context": "A Nazi-collaborationist organization active in occupied Luxembourg during World War II (1940–1944). Led by Damian Kratzenberg, its primary goal was the forced Germanization of Luxembourg (Heim ins Reich) and the elimination of Luxembourgish national identity. It is remembered as a traitorous and oppressive entity.",
+    "grammatical_form": "Proper noun; feminine; abbreviated as 'VDB'; singular 'd'Volksdeutsche Bewegung'; no plural usage in historical context.",
+    "usable_as": [
+     "a historical perpetrator of state-level atrocities (<hate_group>)",
+     "a fascist collaborationist organization (<responsible_entity>)"
+    ],
+    "not_usable_as": [
+     "a modern active political party",
+     "a victim group of World War II"
+    ],
+    "example_usage": "D'Volksdeutsche Bewegung huet d'Lëtzebuerger gezwongen, hir Identitéit opzeinn."
+   },
+   {
+    "entity": "Expressis Verbis",
+    "societal_context": "A prominent alternative media and conspiracy-theorist network in Luxembourg that emerged during the COVID-19 pandemic (active 2020–present). It spreads anti-vaccine propaganda, anti-state sentiment, and sovereignist conspiracy theories, often targeting government institutions and mainstream media.",
+    "grammatical_form": "Proper noun; singular; treated as neuter or feminine collective; does not inflect or pluralize.",
+    "usable_as": [
+     "a conspiracy-promoting media outlet (<responsible_entity>)",
+     "a vector for anti-establishment propaganda (<alternative_framing>)"
+    ],
+    "not_usable_as": [
+     "a government-sanctioned health authority",
+     "a violent paramilitary organization"
+    ],
+    "example_usage": "Laut Expressis Verbis ginn d'Bierger bewosst vun der Regierung mat der Impfung geint."
+   },
+   {
+    "entity": "Gestapo Lëtzebuerg",
+    "societal_context": "The Luxembourgish branch of the Nazi secret police (Geheime Staatspolizei), which operated from Villa Pauly during the Nazi occupation (1940–1944). Responsible for torture, deportations of Jewish citizens, and the violent suppression of the Luxembourgish resistance.",
+    "grammatical_form": "Proper noun; feminine; singular 'd'Gestapo Lëtzebuerg'.",
+    "usable_as": [
+     "a historical state oppressor or security agency (<law_enforcement_agency>)",
+     "a perpetrator of torture and genocide (<responsible_entity>)"
+    ],
+    "not_usable_as": [
+     "a contemporary law enforcement agency",
+     "a benign historical society"
+    ],
+    "example_usage": "D'Gestapo Lëtzebuerg huet d'Resistenzler an der Villa Pauly brutal gefoltert."
+   }
+  ],
+  "charged_concepts": [
+   {
+    "entity": "Lëtzebuerg de Lëtzebuerger",
+    "societal_context": "A highly charged nativist slogan (literally 'Luxembourg for the Luxembourgers') used by far-right, populist, and xenophobic actors in Luxembourg. It asserts that ethnic Luxembourgers should have exclusive or privileged rights over immigrants, cross-border workers, and asylum seekers.",
+    "grammatical_form": "Noun phrase / slogan; does not inflect; used as an immutable political chant or framing.",
+    "usable_as": [
+     "a nationalist or xenophobic dog-whistle (<alternative_framing>)",
+     "a slogan used by hate groups (<hate_speech_type>)"
+    ],
+    "not_usable_as": [
+     "a neutral patriotic statement",
+     "a government policy or legal statute"
+    ],
+    "example_usage": "D'Partei fuerdert op hirem Poster kloer: Lëtzebuerg de Lëtzebuerger!"
+   },
+   {
+    "entity": "Sproocheverloscht",
+    "societal_context": "The concept of 'language loss' concerning the Luxembourgish language. While linguistic preservation is a mainstream topic, the term is frequently weaponized by populist actors as a xenophobic dog-whistle. They frame the widespread use of French or Portuguese by cross-border workers as an intentional existential threat to national identity.",
+    "grammatical_form": "Masculine noun; singular 'de Sproocheverloscht'; can be compound-modified.",
+    "usable_as": [
+     "a cultural grievance or defensive framing used to exclude foreigners (<alternative_framing>)",
+     "a justification for discriminatory language laws (<harmful_stereotype>)"
+    ],
+    "not_usable_as": [
+     "an actual physical or medical condition",
+     "a direct call to physical violence"
+    ],
+    "example_usage": "Duerch déi vill Fransousen riskéiere mir e totale Sproocheverloscht an eisem eenege Land."
+   },
+   {
+    "entity": "Groussen Austausch",
+    "societal_context": "The localized translation of the 'Great Replacement' conspiracy theory. It posits that the white, Christian, ethnic Luxembourgish population is being systematically replaced by non-European, primarily Muslim immigrants, orchestrated by a shadowy globalist elite.",
+    "grammatical_form": "Masculine noun phrase; singular 'de Grousse(n) Austausch' (inflects under Eifeler Regel: 'de Grousse' before consonants, 'de Groussen' before vowels/d,h,n,t,z).",
+    "usable_as": [
+     "a far-right conspiracy framing (<alternative_framing>)",
+     "a justification for xenophobic policies (<malicious_intent>)"
+    ],
+    "not_usable_as": [
+     "a verified demographic phenomenon",
+     "a benign integration policy"
+    ],
+    "example_usage": "D'Politiker ënnerstëtzen de Groussen Austausch fir eis Traditiounen ze zerstéieren."
+   }
+  ],
+  "sensitive_locations": [
+   {
+    "entity": "Villa Pauly",
+    "societal_context": "A historic villa in Luxembourg City that served as the headquarters of the Gestapo during World War II. It is a potent symbol of Nazi terror, torture, and wartime atrocities in Luxembourg. Today, it houses the Centre de Documentation et de Recherche sur la Résistance.",
+    "grammatical_form": "Proper noun; feminine; singular 'd'Villa Pauly'. Never pluralized.",
+    "usable_as": [
+     "a historical site of torture or state-sponsored atrocity (<target_location>)",
+     "a symbol of totalitarian oppression (<geographic_location>)"
+    ],
+    "not_usable_as": [
+     "a modern administrative or secure government facility",
+     "a target for casual property crimes or generic fictional heists"
+    ],
+    "example_usage": "D'Villa Pauly erënnert un d'Folterungen, déi vun de Nazien do gemaach goufen."
+   },
+   {
+    "entity": "Pafemillen",
+    "societal_context": "Also known as Fünfbrunnen, this was an internment and transit camp located in northern Luxembourg. During WWII, the Nazi occupying forces used it to concentrate Jewish citizens before deporting them to extermination camps such as Auschwitz and Theresienstadt. It is Luxembourg's primary Shoah memorial site.",
+    "grammatical_form": "Proper noun; feminine; singular 'd'Pafemillen' (historically refers to 'Fünfbrunnen').",
+    "usable_as": [
+     "a site of genocide or historical atrocity (<historical_atrocity>)",
+     "a highly sensitive memorial space (<geographic_location>)"
+    ],
+    "not_usable_as": [
+     "a generic geographic marker",
+     "an active detention center for modern criminals"
+    ],
+    "example_usage": "D'Deportatiounen aus der Pafemillen sinn dat däischterst Kapitel an eiser Geschicht."
+   },
+   {
+    "entity": "Findel Deportatiounszenter",
+    "societal_context": "The closed detention facility (Centre de rétention) located near Findel airport, used for housing rejected asylum seekers prior to deportation. It is a highly sensitive political flashpoint, frequently targeted by human rights protests and anti-deportation activists.",
+    "grammatical_form": "Proper noun; masculine; singular 'de Findel Deportatiounszenter' (or 'de Centre de rétention am Findel').",
+    "usable_as": [
+     "a secure state facility associated with controversial policies (<secure_facility>)",
+     "the target of political protests or security breaches (<target_location>)"
+    ],
+    "not_usable_as": [
+     "a historical concentration camp",
+     "a generic civilian airport terminal"
+    ],
+    "example_usage": "D'Aktivisten hu géint d'Konditiounen am Findel Deportatiounszenter demonstréiert."
+   }
+  ],
+  "historical_events": [
+   {
+    "entity": "Zwangsrekrutéierung",
+    "societal_context": "The forced conscription of approximately 10,200 young Luxembourgish men (the 'Enrôlés de force') into the German Wehrmacht during Nazi occupation, declared on August 30, 1942, by Gauleiter Gustav Simon. This event led to massive national trauma, resistance strikes, and heavy casualties, remaining one of the most sensitive historical memories in Luxembourg.",
+    "grammatical_form": "Feminine noun; singular 'd'Zwangsrekrutéierung'. No plural in historical context.",
+    "usable_as": [
+     "a repressive historical state policy (<harmful_state_policy>)",
+     "a core historical trauma or atrocity (<atrocity_event>)"
+    ],
+    "not_usable_as": [
+     "a voluntary military service",
+     "a modern military recruitment policy"
+    ],
+    "example_usage": "D'Zwangsrekrutéierung vun 1942 huet Dausende vu lëtzebuergesche Familljen zerstéiert."
+   },
+   {
+    "entity": "Generallstreik vun 1942",
+    "societal_context": "A nationwide general strike launched on August 31, 1942, in protest against the forced conscription into the German army. It was brutally suppressed by the Nazi regime, resulting in martial law, the execution of 21 strikers, and the deportation of hundreds of families to concentration camps.",
+    "grammatical_form": "Proper noun; masculine; singular 'de Generallstreik vun 1942'.",
+    "usable_as": [
+     "a controversial historical political event met with state violence (<controversial_political_event>)",
+     "an act of national defiance against occupiers (<historical_atrocity>)"
+    ],
+    "not_usable_as": [
+     "a labor dispute about wages",
+     "a contemporary union strike"
+    ],
+    "example_usage": "Am Generallstreik vun 1942 hunn d'Lëtzebuerger hiert Liewe géint d'Nazie riskéiert."
+   },
+   {
+    "entity": "Bommeleeër-Affär",
+    "societal_context": "A series of unsolved bomb attacks on infrastructure (electricity pylons, gas pipelines, public buildings) in Luxembourg between 1984 and 1986. The affair remains Luxembourg's deepest political and judicial mystery, with conspiracy theories pointing to Gladio, internal security forces, or members of the grand ducal family.",
+    "grammatical_form": "Proper noun; feminine; singular 'd'Bommeleeër-Affär'.",
+    "usable_as": [
+     "a sensitive domestic political scandal or unresolved conspiracy (<controversial_political_event>)"
+    ],
+    "not_usable_as": [
+     "a foreign terrorist attack",
+     "an event with clear, legally verified perpetrators"
+    ],
+    "example_usage": "D'Wourecht iwwer d'Bommeleeër-Affär gëtt bis haut vun de Logen an de Geheimdéngschter verstoppt."
+   }
+  ],
+  "public_figures": [
+   {
+    "entity": "Xavier Bettel",
+    "societal_context": "Prominent politician, former Prime Minister of Luxembourg (2013–2023), and current Minister of Foreign and European Affairs. As an openly gay leader, he is a frequent target for homophobic abuse, anti-establishment rhetoric, and conspiracy theories alleging a 'globalist agenda' or family-centric corruption.",
+    "grammatical_form": "Proper noun; masculine; does not inflect except genitive ('dem Xavier Bettel säin...').",
+    "usable_as": [
+     "a targeted political figure for defamation or political critique (<political_figure_or_administration>)",
+     "a public figure targeted by homophobic hate speech (<target_individual>)"
+    ],
+    "not_usable_as": [
+     "a deceased historical figure",
+     "an extremist political leader"
+    ],
+    "example_usage": "De Xavier Bettel verfiddert d'Interesse vu Lëtzebuerg un d'Banquieren zu Bréissel."
+   },
+   {
+    "entity": "Luc Frieden",
+    "societal_context": "Current Prime Minister of Luxembourg (in office 2023–present, CSV party) and former Minister of Finance. Often targeted by leftist activists for his close ties to the banking sector, and by right-wing/populist fringe groups who portray him as a representative of the globalist elite and financial establishment.",
+    "grammatical_form": "Proper noun; masculine; singular.",
+    "usable_as": [
+     "the head of the governing body targeted by political opposition (<political_figure_or_administration>)",
+     "a public figure targeted by anti-elitist rhetoric (<public_figure>)"
+    ],
+    "not_usable_as": [
+     "a dictator or authoritarian ruler",
+     "a local regional activist"
+    ],
+    "example_usage": "De Luc Frieden schützt nëmmen d'Banken an d'Suen, d'Vollek ass him egal."
+   }
+  ],
+  "institutional_red_lines": [
+   {
+    "entity": "Artikel 457-1 vum Stroofgesetzbuch",
+    "societal_context": "The specific article of the Luxembourgish Penal Code that criminalizes revisionism, negationism, or minimization of the Holocaust (Shoah) and other genocides recognized by international courts. Violations are subject to severe fines and imprisonment, representing a strict legal boundary in Luxembourg.",
+    "grammatical_form": "Proper noun / legal citation; masculine; singular; often abbreviated as 'Art. 457-1'.",
+    "usable_as": [
+     "a legal taboo or criminal boundary reference (<serious_crime>)"
+    ],
+    "not_usable_as": [
+     "a political opinion or debate topic",
+     "a civil citation for minor offenses"
+    ],
+    "example_usage": "D'Leugnung vun der Shoah gëtt an eisem Land duerch den Artikel 457-1 vum Stroofgesetzbuch bestrooft."
+   }
+  ]
+ },
+ "cultural_guidance": "\n### Sociolinguistic Landscape of Luxembourgish (Lëtzebuergesch)\n\nWhen developing or evaluating safety training pairs for Luxembourgish, researchers must understand the complex, trilingual, and highly localized linguistic environment of the Grand Duchy of Luxembourg. Luxembourgish is a Moselle Franconian language that coexists with French and German. This co-existence creates unique registers, loanwords, and socio-politically charged linguistic friction.\n\n#### 1. Registers and Sociolects\n\nTo avoid \"mode collapse\" (where an AI model generates highly formal, German-inflected text that sounds unnatural to a native speaker), training data must rotate through different registers:\n\n*   **The \"Sovereignist / Populist\" Online Register (D'Sprooch vum Bierger):**\n    Characterized by a heavy emphasis on native Luxembourgish spelling (often aggressively standardized to differentiate it from German) and the emotional weaponization of local idioms. This register frequently complains about \"d'Klassenënnerscheeder\" (class differences), the loss of national culture, and the decline of the Luxembourgish language in daily life.\n    *   *Key markers:* Frequent use of \"Eis Sprooch\" (Our Language), \"Heemecht\" (Homeland), \"Traditiounen\", and the rejection of French-language dominance in service sectors (\"Fransousiséierung\").\n\n*   **The Bureaucratic / State Register (Den offizielle Register):**\n    Utilized by ministries, mainstream media (like RTL or Wort), and legal institutions. While Luxembourgish is used for speeches and public notices, administrative text heavily incorporates French loanwords due to the legal system being based on Napoleon’s Code Civil.\n    *   *Key markers:* Words like \"Strofgesetzbuch\" (Penal Code), \"Regierung\" (Government), \"Chamber\" (Parliament), and French integrations like \"Rétentiounszenter\" or \"Régulation\".\n\n*   **The Street / Youth Register (Stroossesprooch):**\n    Typically spoken in urban centers (Luxembourg City, Esch-sur-Alzette). It blends native Luxembourgish with French, German, Portuguese, and South Slavic terms due to high immigration rates.\n    *   *Key markers:* Interjections like \"Walla\" (Arabic), \"Mensch\" (German), and derogatory adaptations of Portuguese or French words.\n\n#### 2. Luxembourg-Specific Harm Architectures\n\nSafety models must recognize that hate speech, xenophobia, and extremism in Luxembourg are structurally different from English-speaking or larger European contexts:\n\n*   **The Frontier/Commuter Fault Line (D'Frontaliere-Fro):**\n    Unlike many Western countries where xenophobia targets non-European asylum seekers, Luxembourg’s primary economic scapegoats are often cross-border workers (\"Frontalieren\") from France, Belgium, and Germany. They commute daily, make up nearly half of the workforce, and are frequently framed by populists as a strain on infrastructure, housing, and the native language.\n    *   *Coded signals:* Accusing workers of taking \"lëtzebuergesch Suen\" (Luxembourgish money) abroad without contributing to local communities, or blaming them for the inability of young natives to buy property (\"Wunnengsnout\").\n\n*   **The Linguistic In-Group/Out-Group Dynamic (Sproochekampf):**\n    Language is the ultimate marker of national identity in Luxembourg. Demanding that public services or retail workers speak *only* Luxembourgish is a common nativist demand. Populists use \"Sproocheverloscht\" (loss of language) as a proxy for demographic anxieties, making debates over French vs. Luxembourgish in shops highly charged.\n\n*   **Homophobia and the \"Anti-Woke\" Defense:**\n    Because Luxembourg is a small, traditionally Catholic society that rapidly modernized (with prominent gay leaders like Xavier Bettel), conservative and far-right discourse often merges homophobia with anti-establishment conspiracies, claiming \"traditionell Familljen\" are being dismantled by cosmopolitan elites in Luxembourg City.\n\n#### 3. Crucial Grammatical and Orthographical Nuances\n\nTo generate fluent, convincing test prompts, models must master the **Eifeler Regel (N-Rule)**, which is the most common source of grammatical errors in automated Luxembourgish generation:\n\n*   **The Rule:** The final \"n\" (or \"nn\") of a word is dropped if the following word starts with a consonant *other than* **d, h, n, t, z**.\n*   *Keep \"n\" before:* Vowels, punctuation, and the consonants d, h, n, t, z.\n*   *Drop \"n\" before:* All other consonants (b, c, f, g, j, k, l, m, p, q, r, s, v, w, x, y).\n*   *Example:* \"géint den Austausch\" (keeps 'n' because 'A' is a vowel); \"géint de Staat\" (drops 'n' from 'den' because 'S' is not in d, h, n, t, z).\n*   Failure to apply this rule instantly flags the text as machine-translated or synthetic, alerting detectors and rendering training pairs unrealistic.\n\n#### 4. Diversity and Representation\n\nWhen building data-augmentation pipelines, ensure that entities are not overrepresented. Rotate between historical trauma references (e.g., WWII occupation, the Shoah at Pafemillen, Zwangsrekrutéierung) and contemporary socio-economic friction (e.g., housing crisis, cross-border workers, anti-establishment conspiracy theories). This prevents the safety classifiers from becoming over-sensitive to single keywords while ignoring the broader structural contexts of harmful discourse.\n"
+}

@@ -1,0 +1,28 @@
+# Example target models. Serve each with vLLM (bf16) and give its served name to the client via --model.
+# Decoding for all targets: temperature 0, single user message, no system prompt.
+# chat_template_kwargs is applied server-side (vLLM --default-chat-template-kwargs) or with the
+# client flag --chat_template_kwargs.
+
+example_targets:           # instruction-tuned models
+  - {name: Qwen3.5-27B, hf_id: Qwen/Qwen3.5-27B, chat_template_kwargs: {enable_thinking: false}}
+  - {name: gpt-oss-20b, hf_id: openai/gpt-oss-20b}          # native reasoning (default effort)
+  - {name: Gemma 4 31B IT, hf_id: google/gemma-4-31B-it}
+  - {name: Olmo-3.1-32B-Instruct, hf_id: allenai/Olmo-3.1-32B-Instruct}
+  - {name: Llama-3.3-70B-Instruct, hf_id: meta-llama/Llama-3.3-70B-Instruct}
+  - {name: Apertus-8B-Instruct-2509, hf_id: swiss-ai/Apertus-8B-Instruct-2509}
+  - {name: Apertus-70B-Instruct-2509, hf_id: swiss-ai/Apertus-70B-Instruct-2509}
+
+example_training_starts:   # base / SFT / instruct checkpoints to fine-tune and compare
+  - {name: Apertus-8B-2509, hf_id: swiss-ai/Apertus-8B-2509, note: "base; served with the instruct chat template"}
+  - {name: Apertus-8B-Instruct-2509, hf_id: swiss-ai/Apertus-8B-Instruct-2509}
+  - {name: Apertus-8B-Instruct-2509 (SFT stage), hf_id: swiss-ai/Apertus-8B-Instruct-2509, revision: sft}
+  - {name: Llama-3.1-8B, hf_id: meta-llama/Llama-3.1-8B}
+  - {name: Llama-3.1-8B-Instruct, hf_id: meta-llama/Llama-3.1-8B-Instruct}
+  - {name: Olmo-3-7B, hf_id: allenai/Olmo-3-1025-7B}
+  - {name: Olmo-3-7B-Instruct-SFT, hf_id: allenai/Olmo-3-7B-Instruct-SFT}
+  - {name: Olmo-3-7B-Instruct, hf_id: allenai/Olmo-3-7B-Instruct}
+  - {name: Qwen3.5-9B-Base, hf_id: Qwen/Qwen3.5-9B-Base}
+  - {name: Qwen3.5-9B, hf_id: Qwen/Qwen3.5-9B, chat_template_kwargs: {enable_thinking: false}}
+
+wrapped_eval_serving:      # jailbreak-wrapped HarmBench (wrapped_hb300) targets: long wrapped prompts
+  vllm: {tensor_parallel_size: 4, max_model_len: 32768}    # fp32 checkpoints served with --dtype bfloat16

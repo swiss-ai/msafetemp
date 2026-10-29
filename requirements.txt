@@ -1,0 +1,13 @@
+# Core dependencies (data augmentation, dataset build, response generation, evaluation clients,
+# analyses). Python 3.12. Versions are the ones the released runs used.
+openai==2.14.0
+httpx==0.28.1
+tenacity==9.1.4
+datasets==4.0.0
+huggingface_hub==1.26.0
+pyarrow==22.0.0
+pandas==2.3.3
+numpy==2.4.0
+scipy==1.17.0
+PyYAML==6.0.3
+requests==2.32.5

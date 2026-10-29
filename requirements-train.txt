@@ -1,0 +1,10 @@
+# TRL SFT / DPO (msafetemp.training.sft, msafetemp.training.dpo), installed on top of the
+# container's PyTorch (we use the NGC PyTorch 25.12 container). Separate environment
+# from requirements.txt because of the newer datasets / transformers versions.
+trl==1.12.0
+transformers==5.16.1
+accelerate==1.14.0
+datasets==5.0.1
+huggingface_hub==1.32.0
+# Apertus SFT with Megatron-LM is not pip-installable: see msafetemp/training/README.md
+# (Megatron-LM with Apertus support, Transformer Engine, huggingface-hub==1.0.0rc6).

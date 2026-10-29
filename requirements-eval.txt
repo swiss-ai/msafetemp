@@ -1,0 +1,4 @@
+# Serving and external benchmarks. Any OpenAI-compatible server works for the model calls;
+# the reference runs used vLLM. lm-evaluation-harness is only needed for msafetemp.evaluation.lm_eval_suite.
+vllm
+lm_eval[vllm]

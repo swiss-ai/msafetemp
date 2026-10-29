@@ -1,0 +1,58 @@
+{
+  "_comment": "Template for the Apertus-8B Megatron-LM safety SFT run config. render_config.py fills dataset_bins, train_weights, source.jsonl/sha256 (from mix_manifest.json), the checkpoint paths and work_root. split_seed is kept verbatim: it fixes the 2% family-level validation split of the reference run.",
+  "schema_version": 1,
+  "run_name": "apertus_8b_{kind}_safety_sft",
+  "kinds": {
+    "base": {"weight_repo_id": "swiss-ai/Apertus-8B-2509", "weight_revision": "3162c99675aa588097cecd4a24b9aa1f712af477"},
+    "instruct": {"weight_repo_id": "swiss-ai/Apertus-8B-Instruct-2509", "weight_revision": "b946d40447b2b597999b9c86d44bee0b452c919f"}
+  },
+  "model": {
+    "architecture": {
+      "ffn_hidden_size": 21504,
+      "hidden_size": 4096,
+      "max_position_embeddings": 65536,
+      "num_attention_heads": 32,
+      "num_layers": 32,
+      "num_query_groups": 8,
+      "rope_scaling_factor": 1,
+      "rotary_base": 12000000
+    },
+    "text_training_vocab_size": 131072,
+    "tokenizer_template_repo_id": "swiss-ai/Apertus-8B-Instruct-2509",
+    "tokenizer_template_revision": "b946d40447b2b597999b9c86d44bee0b452c919f"
+  },
+  "snapshots": {
+    "megatron_commit": "512aae23559aff142f1488c4a3dee2192cfbba1a",
+    "transformers_commit": "b9f90dc388fd415a2ba2a6a31a372f451d4a4eed"
+  },
+  "source": {
+    "require_validation_per_bin": true,
+    "split_key": "family_id",
+    "split_seed": "apertus_v1_8b_safety_sft_r15_family_split",
+    "stratification": "language",
+    "validation_fraction": 0.02
+  },
+  "tokenization": {
+    "add_generation_prompt": false,
+    "assistant_begin_sequence": [67],
+    "assistant_end_sequence": [68],
+    "enable_thinking": false,
+    "template_origin": "Apertus-8B-Instruct-2509",
+    "workers": 16
+  },
+  "training": {
+    "global_batch_size": 128,
+    "learning_rate": 1e-05,
+    "max_docs_per_bin": 8,
+    "micro_batch_size": 1,
+    "min_learning_rate": 1e-06,
+    "nodes": 32,
+    "packing_strategy": "bfd",
+    "pipeline_parallel_size": 1,
+    "seed": 1234,
+    "seq_length": 4096,
+    "tensor_parallel_size": 4,
+    "warmup_fraction": 0.03,
+    "weight_decay": 0.0
+  }
+}

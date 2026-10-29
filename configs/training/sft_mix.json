@@ -1,0 +1,65 @@
+{
+  "_comment": "Final SFT mix: MSafeTemp safety bins plus general instruction data (Dolci-Instruct-SFT). Bin weights are Megatron blend weights; order matters for the seeded TRL sample. 'general' is the remainder 1 - sum(other bins).",
+  "base_weights": {
+    "harmful": 0.041979,
+    "posthoc": 0.017942,
+    "benign_direct": 0.055128,
+    "benign_bounded": 0.004907,
+    "vanilla_benign": 0.045,
+    "vanilla_harmful": 0.025,
+    "wrap_benign": 0.025,
+    "wrap_harmful": 0.015,
+    "pyrit_harmful": 0.005
+  },
+  "short_contrast_weight": 0.03,
+  "short_contrast_keep_innocuous_types": ["SWAP", "IDIOM", "PROTECT"],
+  "trl": {
+    "rows": 400000,
+    "seed": 20260924,
+    "short_contrast_seed": 20260925
+  },
+  "paper_rows": {
+    "harmful": "Harmful",
+    "posthoc": "Culturally localized harmful",
+    "vanilla_harmful": "Unwrapped harmful",
+    "wrap_harmful": "Jailbreak-wrapped harmful",
+    "pyrit_harmful": "Jailbreak-wrapped harmful",
+    "benign_direct": "Benign direct",
+    "benign_bounded": "Benign bounded",
+    "vanilla_benign": "Unwrapped benign",
+    "wrap_benign": "Jailbreak-wrapped benign",
+    "short_contrast": "Short benign requests",
+    "general": "General instruction (Dolci)"
+  },
+  "expected_bin_counts": {
+    "harmful": 91642,
+    "posthoc": 39168,
+    "benign_direct": 120349,
+    "benign_bounded": 10713,
+    "vanilla_benign": 22413,
+    "vanilla_harmful": 20724,
+    "wrap_benign": 22446,
+    "wrap_harmful": 29686,
+    "pyrit_harmful": 26572,
+    "short_contrast": 25103,
+    "general": 1851189
+  },
+  "expected_megatron_plan": {
+    "train_samples": 453504,
+    "train_iters": 3543,
+    "global_batch_size": 128
+  },
+  "paper_counts": {
+    "Harmful": 91642,
+    "Culturally localized harmful": 39168,
+    "Unwrapped harmful": 20724,
+    "Jailbreak-wrapped harmful": 56258,
+    "Benign direct": 120349,
+    "Benign bounded": 10713,
+    "Unwrapped benign": 22413,
+    "Jailbreak-wrapped benign": 22446,
+    "Short benign requests": 25103,
+    "General instruction (Dolci)": 1851189,
+    "Total": 2260005
+  }
+}

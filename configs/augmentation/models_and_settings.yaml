@@ -1,0 +1,71 @@
+# Models and per-stage settings of the released augmentation runs (reference; the CLIs take
+# these as arguments). Serve each model behind an OpenAI-compatible endpoint (e.g. vLLM).
+models:
+  generator: google/gemma-4-31B-it            # extraction, translation, fills, paraphrases, benign pairs,
+                                              # localization, affixes, response generation
+  pipeline_judge: openai/gpt-oss-120b         # judge1, translation judge, judge2, paraphrase judge, benign judge,
+                                              # fit judge, response judge, benign audit (reasoning_effort high)
+  taxonomy_judge: openai/gpt-oss-safeguard-120b
+  response_harm_judge: openai/gpt-oss-120b    # evaluation harm-judge prompt applied to candidate refusals
+  wrapper_quality_judge: <multilingual quality model>   # wrapper translation checks + assembled-prompt quality
+
+sampling: {top_p: 1.0, top_k: null}           # plain temperature sampling everywhere
+
+stages:                                       # temperature / max_tokens as implemented
+  extractor:            {temperature: 0.2, max_tokens: 8192}
+  judge1:               {temperature: 0.0, max_tokens: 32768}
+  translator:           {temperature: 0.3, max_tokens: 8192}
+  translation_judge:    {temperature: 0.0, max_tokens: 32768}
+  translation_patcher:  {temperature: 0.2, max_tokens: {wildguard: 32768, harmbench: 8192}}
+  harmful_generator:    {temperature: 0.9, max_tokens: {wildguard: 32768, harmbench: 8192}}
+  judge2:               {temperature: 0.0, max_tokens: 32768}
+  benign_generator:     {temperature: 0.8, max_tokens: 8192}
+  benign_judge:         {temperature: 0.0, max_tokens: 32768}
+  paraphraser:          {temperature: 0.9, max_tokens: 32768}
+  paraphrase_judge:     {temperature: 0.0, max_tokens: 32768}
+  affix_generators:     {temperature: 0.9, max_tokens: 8192}
+  jailbreak_extractor:  {temperature: 0.2, max_tokens: 32768}
+  fit_judge:            {temperature: 0.0, max_tokens: 24576}
+  contextual_generator: {temperature: 0.9, max_tokens: 4096}
+  taxonomy_classifier:  {temperature: 0.0, max_tokens: 16384}
+  benign_audit:         {temperature: 0.0, max_tokens: 16384, reasoning_effort: high}
+  response_generator:   {temperature: 0.8, max_tokens: {refusal_brief: 400, refusal_compact: 900, refusal_full: 1400, benign: 2048}}
+  response_judge:       {temperature: 0.0, max_tokens: 8192}
+  wrapper_translation:  {temperature: 0.2, max_tokens: 8192, max_retries: 2}
+
+runs:
+  wildguard:
+    source: {dataset: allenai/wildguardmix, config: wildguardtrain, harmful_only: true,
+             shuffle_buffer: 5000, seed: 111, n: 10000, min_prompt_length: 800}
+    canonical_seeds: 2500
+    num_variants: 5
+    paraphrasing: 2
+    prefixes: 5
+    suffixes: 5
+    max_retries: 3
+    benign_candidates: 5            # benign.py over the canonical seeds
+    posthoc_max_recipes: 5
+    split: {n_test: 500, split_seed: 111}
+    languages: [albanian, amharic, arabic, bengali, bulgarian, chinese_simplified, croatian, czech,
+                danish, dutch, english, estonian, finnish, french, german, greek, hindi, hungarian,
+                indonesian, italian, japanese, korean, latvian, lithuanian, macedonian, norwegian,
+                persian, polish, portuguese_brazilian, romanian, russian, serbian, slovak, slovenian,
+                spanish, swahili, swedish, swiss_german, tagalog, thai, turkish, ukrainian,
+                vietnamese, yoruba]
+  harmbench:
+    source: {dataset: walledai/HarmBench, config: standard, seed: 111}   # 200 behaviors
+    num_variants: 5
+    paraphrasing: 2
+    max_retries: 3
+    benign_run: {num_variants: 0, paraphrasing: 0, benign: 5}
+    affixes: {prefixes: 5, suffixes: 5}
+    posthoc_max_recipes: 5
+    languages: all 60 keys of msafetemp.cultural_cards.LANGUAGE_REGISTRY
+  responses:
+    refusal_design: v2
+    attempts: 2
+    seed: 111
+  wrappers:
+    eligible_wrappers: 557
+    matched_eval: {mode: per_source, k: 10, seed: 20260913}
+    training: {mode: per_language, per_language: 1000, min_k: 5, max_k: 10, seed: 20260922}

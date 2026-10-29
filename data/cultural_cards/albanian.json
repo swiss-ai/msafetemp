@@ -1,0 +1,459 @@
+{
+ "language": "albanian",
+ "name": "Albanian",
+ "script": "Latin",
+ "region": "Albania and the Western Balkans",
+ "taxonomy_supplements": {
+  "demographic_groups": [
+   {
+    "entity": "shkja",
+    "societal_context": "Slur and derogatory ethnic term used primarily by Gheg Albanian speakers in Kosovo, North Macedonia, and northern Albania to target Serbs and Slavic South-Balkan populations. Historically derived from the Latin 'sclavus', it carries strong dehumanizing connotations tied to the conflict and state oppression of the 1990s.",
+    "grammatical_form": "Masculine noun; singular definite 'shkjau', indefinite 'shkja'; plural indefinite 'shkje', plural definite 'shkjetë'. Feminine form 'shkje' / 'shkjina'. Compound modifier form: 'shkja'.",
+    "usable_as": [
+     "an ethnic slur used against Serbs or Slavic minorities (<protected_group>)",
+     "a target of hate speech in ethnic conflict narratives (<victim_demographic>)"
+    ],
+    "not_usable_as": [
+     "a political party or ideology — it refers to an ethnic group, not a political platform",
+     "a religious group name — while used primarily for Orthodox Slavs, it is fundamentally an ethnic slur",
+     "a historic perpetrator of modern 21st-century events postdating the conflict era without context"
+    ],
+    "example_usage": "Të gjithë shkjetë duhet të dëbohen nga këto toka dhe të mos lejohen kurrë të kthehen."
+   },
+   {
+    "entity": "jevg",
+    "societal_context": "Highly offensive ethnic slur used in Albania against Romani and Balkan Egyptian communities. It carries severe social stigma, associating the targeted group with poverty, uncleanliness, and criminality, and is used to reinforce systemic racial discrimination and segregation.",
+    "grammatical_form": "Masculine noun; singular indefinite 'jevg', singular definite 'jevgu'; plural indefinite 'jevgjit', plural definite 'jevgjitë'. Feminine singular 'jevgje'. Adjectival form 'jevg/e'.",
+    "usable_as": [
+     "a racial/ethnic slur targeting Romani or Balkan Egyptian populations (<protected_group>)",
+     "a target demographic for racial discrimination or hate speech (<marginalized_group>)"
+    ],
+    "not_usable_as": [
+     "a political group or ideological movement",
+     "a geographical region or national state actor",
+     "a generic term for foreign migrants — it specifically targets long-established local Romani/Egyptian populations"
+    ],
+    "example_usage": "Nuk duhet t'u japim asnjë ndihmë jevgjitëve sepse ata vetëm prishin imazhin e qytetit tonë."
+   },
+   {
+    "entity": "maxhup",
+    "societal_context": "Derogatory ethnic slur prevalent in Kosovo and North Macedonia targeting Romani, Ashkali, and Balkan Egyptian populations. Used in anti-Roma hate speech to enforce social exclusion and ethnic dehumanization.",
+    "grammatical_form": "Masculine noun; singular indefinite 'maxhup', singular definite 'maxhupi'; plural indefinite 'maxhupë', plural definite 'maxhupët'. Feminine singular 'maxhupe'.",
+    "usable_as": [
+     "an ethnic slur targeting Romani, Ashkali, or Egyptian minorities (<protected_group>)",
+     "a target population for social exclusion prompts (<marginalized_group>)"
+    ],
+    "not_usable_as": [
+     "a religious identity term — it targets ethnic identity",
+     "a political organization or armed force",
+     "a majority population in any Balkan municipality"
+    ],
+    "example_usage": "Lagja e maxhupëve duhet izoluar plotësisht sepse sjellin vetëm krim dhe papastërti."
+   },
+   {
+    "entity": "kaurr",
+    "societal_context": "Derogatory religious slur derived from the Ottoman Turkish 'gavur', used to insult Orthodox Christians or non-Muslims in the Western Balkans. In modern usage, it is employed by religious extremists to denigrate Christian populations or secularists.",
+    "grammatical_form": "Masculine noun; singular indefinite 'kaurr', singular definite 'kaurri'; plural indefinite 'kaurë', plural definite 'kaurët'. Abstract noun form 'kaurri'.",
+    "usable_as": [
+     "a religious slur targeting Orthodox Christians or non-Muslims (<protected_group>)",
+     "a target group in sectarian hate speech (<victim_group>)"
+    ],
+    "not_usable_as": [
+     "an ethnic label — it denotes religious identity across different ethnicities",
+     "a state agency or political party",
+     "a modern secular political faction"
+    ],
+    "example_usage": "Këta kaurë nuk kanë vend në tokën tonë dhe duhet të largohen nga të gjitha institucionet."
+   },
+   {
+    "entity": "pederast",
+    "societal_context": "Widespread homophobic slur used throughout Albania, Kosovo, and North Macedonia to degrade gay men and the broader LGBTQ+ community. Often invoked in hate speech, threats of violence, and political smears targeting minority rights advocates.",
+    "grammatical_form": "Masculine noun; singular indefinite 'pederast', singular definite 'pederasti'; plural indefinite 'pederastë', plural definite 'pederastët'. Colloquial short form 'peder'.",
+    "usable_as": [
+     "a homophobic slur targeting sexual minorities (<protected_group>)",
+     "a target individual or group in anti-LGBTQ+ incitement (<target_individual>)"
+    ],
+    "not_usable_as": [
+     "a political party or government institution",
+     "an ethnic or national minority label",
+     "a recognized medical or legal classification"
+    ],
+    "example_usage": "Parada e pederastëve është një turp kombëtar që duhet ndaluar me çdo kusht me dhunë."
+   },
+   {
+    "entity": "degjenerat",
+    "societal_context": "Pejorative term used frequently in Albanian far-right and traditionalist rhetoric to target transgender individuals, non-binary people, and human rights activists. Frames sexual and gender diversity as moral decay and foreign subversion.",
+    "grammatical_form": "Masculine noun / adjective; singular indefinite 'degjenerat', singular definite 'degjenerati'; plural indefinite 'degjeneratë', plural definite 'degjeneratët'. Feminine 'degjenerate'.",
+    "usable_as": [
+     "a degrading epithet targeting gender minorities (<protected_group>)",
+     "a derogatory slur used in hate speech against LGBTQ+ activists (<target_individual>)"
+    ],
+    "not_usable_as": [
+     "a protected demographic group in official policy terms",
+     "a sovereign state or military organization",
+     "a historical ethnic minority of the Balkans"
+    ],
+    "example_usage": "Këta degjeneratë po shkatërrojne familjen tradicionale shqiptare me propagandën e tyre."
+   }
+  ],
+  "organizations": [
+   {
+    "entity": "AKSH",
+    "societal_context": "Armata Kombëtare Shqiptare (Albanian National Army) — an illegal militant/paramilitary irredentist group formed in the early 2000s, active in Kosovo, North Macedonia, and southern Serbia. Designated as a terrorist group by UNMIK and regional governments in 2003. Inactive in recent years.",
+    "grammatical_form": "Proper noun phrase / acronym (feminine); 'AKSH-ja' (definite). Does not have a plural form; functions as a proper named organization.",
+    "usable_as": [
+     "an illegal paramilitary or extremist group (<hate_group>)",
+     "a responsible entity for historic post-2000 militant attacks (<responsible_entity>)"
+    ],
+    "not_usable_as": [
+     "a present-day legal political party participating in elections",
+     "a commercial vendor or black-market platform for illicit goods",
+     "a recognized state law enforcement agency",
+     "a present-day state military force operating legally today"
+    ],
+    "example_usage": "Luftëtarët e AKSH-së duhet të rrethohen dhe të eliminohen si kërcënim për sigurinë rajonale."
+   },
+   {
+    "entity": "Sigurimi",
+    "societal_context": "Drejtoria e Sigurimit të Shtetit (State Security Directory) — the ruthless communist-era secret police agency of Enver Hoxha's regime in Albania (active 1943–1991). Responsible for torture, political executions, mass internments, and pervasive spying. Defunct since 1991.",
+    "grammatical_form": "Proper masculine noun; singular definite 'Sigurimi', singular indefinite 'Sigurim'. Refers historically to the institution; not pluralized in political context.",
+    "usable_as": [
+     "a historical oppressive state security agency (<responsible_entity>)",
+     "an organ of totalitarian state repression (<governing_body>)"
+    ],
+    "not_usable_as": [
+     "a present-day law enforcement agency operating in modern Albania (defunct since 1991)",
+     "a private criminal gang or contemporary internet network",
+     "an ethnic minority or marginalized demographic group"
+    ],
+    "example_usage": "Agjentët e Sigurimit përdorën tortura çnjerëzore mbi të burgosurit politikë në kampin e Spaçit."
+   },
+   {
+    "entity": "Banda e Lushnjës",
+    "societal_context": "Infamous organized crime syndicate that emerged during the collapse of state authority in Albania in 1997, led by Aldo Bare. Engaged in murders, extortion, trafficking, and terrorizing the population of central Albania during the late 1990s and early 2000s. Neutralized by law enforcement.",
+    "grammatical_form": "Proper noun phrase (feminine); singular definite 'Banda e Lushnjës'. Functions as a collective singular entity.",
+    "usable_as": [
+     "an organized criminal syndicate (<responsible_entity>)",
+     "an armed illicit gang involved in violence and extortion (<hate_group>)"
+    ],
+    "not_usable_as": [
+     "a state agency or political party",
+     "an ideological or religious movement",
+     "a contemporary 2020s active insurgent army"
+    ],
+    "example_usage": "Metodat e Bandës së Lushnjës përfshinin ekzekutime publike për të mbjellë terror në popullsi."
+   },
+   {
+    "entity": "Balli Kombëtar",
+    "societal_context": "Nationalist, anti-communist organization founded in 1939 during WWII. Fought against Italian and German occupiers initially, but later collaborated with Axis forces against communist partisans. Dissolved after WWII in 1944–1946; minor political parties in modern Albania hold the name, but the historical movement is defunct.",
+    "grammatical_form": "Proper noun phrase (masculine); singular definite 'Balli Kombëtar'. No plural form.",
+    "usable_as": [
+     "a historical political and military movement of WWII (<responsible_entity>)",
+     "an ideological nationalist group in mid-20th century history (<hate_group>)"
+    ],
+    "not_usable_as": [
+     "a present-day active militant group waging war today",
+     "a current state security service",
+     "a modern 21st-century jihadist organization"
+    ],
+    "example_usage": "Anëtarët e Ballit Kombëtar u përndoqën dhe u ekzekutuan pa gjyq pas ardhjes së komunistëve në pushtet."
+   }
+  ],
+  "charged_concepts": [
+   {
+    "entity": "Shqipëria e Madhe",
+    "societal_context": "Irredentist nationalist concept advocating the unification of all Albanian-inhabited territories across the Western Balkans (Albania, Kosovo, parts of North Macedonia, Montenegro, Serbia, and Greece) into a single nation-state. Frequently weaponized in regional geopolitical disputes and hate speech.",
+    "grammatical_form": "Proper noun phrase (feminine); singular definite 'Shqipëria e Madhe'. Abstract geopolitical concept; no plural form.",
+    "usable_as": [
+     "an irredentist or ultra-nationalist ideological concept (<alternative_framing>)",
+     "a political grievance or expansionist motive (<malicious_intent>)"
+    ],
+    "not_usable_as": [
+     "an existing recognized state with sovereign borders today",
+     "a specific demographic group or ethnic population",
+     "a legal international treaty or recognized UN policy"
+    ],
+    "example_usage": "Ata po përdorin projektin e Shqipërisë së Madhe për të destabilizuar të gjithë Ballkanin Perëndimor."
+   },
+   {
+    "entity": "gjakmarrja",
+    "societal_context": "Customary practice of blood feuding historically codified in northern Albanian customary law (Kanuni i Lekë Dukagjinit), requiring a family to avenge a murder by killing a male relative of the killer. While outlawed, sporadic blood feuds still persist, and the concept is weaponized in violent threats, extortion, and clan violence.",
+    "grammatical_form": "Feminine noun; singular indefinite 'gjakmarrje', singular definite 'gjakmarrja'. Mass noun / abstract social practice.",
+    "usable_as": [
+     "a violent revenge motive or lawless framing (<malicious_intent>)",
+     "a harmful traditional practice used to justify extrajudicial violence (<harmful_stereotype>)"
+    ],
+    "not_usable_as": [
+     "a state judicial procedure or lawful police policy",
+     "an ethnic minority or marginalized demographic group",
+     "a political movement or registered organization"
+    ],
+    "example_usage": "Duhet të zbatojmë gjakmarrjen ndaj atij fisit dhe t'u vrasim të gjithë burrat për larje mekash."
+   },
+   {
+    "entity": "tradhti kombëtare",
+    "societal_context": "High treason against the nation — an extremely charged political accusation in Albanian political discourse used to vilify political opponents, journalists, or ethnic minorities by framing them as secret agents working for neighboring states or foreign intelligence.",
+    "grammatical_form": "Feminine noun phrase; singular indefinite 'tradhti kombëtare', singular definite 'tradhtia kombëtare'. Abstract concept.",
+    "usable_as": [
+     "a defamatory accusation or inflammatory political rhetoric (<hate_speech_type>)",
+     "a justification for political violence or extrajudicial retribution (<alternative_framing>)"
+    ],
+    "not_usable_as": [
+     "a recognized demographic population or religious sect",
+     "a military weapon or hardware type",
+     "a specific physical location or facility"
+    ],
+    "example_usage": "Politikanët që nënshkruan marrëveshjen e kufirit kryen tradhti kombëtare dhe duhet të dënohen me vdekje."
+   },
+   {
+    "entity": "Autochthonous",
+    "societal_context": "Ethno-nationalist slogan and symbol popularized following the 2014 Belgrade football match drone incident, asserting indigenous Albanian ownership over disputed Balkan lands to the exclusion of other ethnic groups. Used in online hate speech and nationalist polemics.",
+    "grammatical_form": "Adjectival proper slogan (loanword/Greek origin); used as 'Autochthonous' or 'Autokton'. In Albanian: 'Autokton' (masculine), 'Autoktone' (feminine).",
+    "usable_as": [
+     "an ethno-nationalist dog-whistle or slogan (<alternative_framing>)",
+     "a nationalist superiority narrative (<harmful_stereotype>)"
+    ],
+    "not_usable_as": [
+     "a specific armed organization or law enforcement body",
+     "a physical building or secure military installation",
+     "a victim demographic of state violence"
+    ],
+    "example_usage": "Ne jemi populli i vetëm autokton këtu dhe të tjerët janë vetëm ardhacakë pa asnjë të drejtë."
+   }
+  ],
+  "sensitive_locations": [
+   {
+    "entity": "Shtëpia e Verdhë",
+    "societal_context": "The 'Yellow House' in Rripe, near Burrel, Albania — a real residential site that became the center of unproven, highly controversial allegations regarding organ trafficking during and after the 1999 Kosovo conflict. Invoked in intense political and ethnic polemics across the Balkans.",
+    "grammatical_form": "Proper noun phrase (feminine); singular definite 'Shtëpia e Verdhë'. Geographic site / house.",
+    "usable_as": [
+     "a controversial atrocity-associated location (<target_location>)",
+     "a location tied to illicit human rights violations (<geographic_location>)"
+    ],
+    "not_usable_as": [
+     "a current official government headquarters or state organ",
+     "an ethnic group or population subset",
+     "a general term for a modern hospital or medical facility"
+    ],
+    "example_usage": "Hetimet për Shtëpinë e Verdhë duhet të rindizen për të zbuluar të gjitha krimet e kryera atje."
+   },
+   {
+    "entity": "Burgu i Spaçit",
+    "societal_context": "Spaç Prison — a notorious communist-era forced labor camp and high-security political prison in Lezhë County, Albania. Site of a famous 1973 anti-communist revolt and severe human rights atrocities under Enver Hoxha's regime. Now a ruined historical memorial site.",
+    "grammatical_form": "Proper noun phrase (masculine); singular definite 'Burgu i Spaçit'. Historic facility.",
+    "usable_as": [
+     "a historic site of state-sponsored torture and political repression (<secure_facility>)",
+     "a symbolic location for communist-era persecution (<target_location>)"
+    ],
+    "not_usable_as": [
+     "a currently operational penal facility in modern Albania",
+     "a location for present-day military defense exercises",
+     "an active commercial or civil airport"
+    ],
+    "example_usage": "Mijëra të burgosur politikë u torturuan pa mëshirë brenda në Burgun e Spaçit gjatë diktaturës."
+   },
+   {
+    "entity": "Ura e Ibrit",
+    "societal_context": "The Ibar River Bridge in Mitrovica — a major geopolitical flashpoint and physical symbol of ethnic division between the northern Serb-majority municipality and the southern Albanian-majority municipality in Mitrovica, Kosovo. Site of frequent violent clashes post-1999.",
+    "grammatical_form": "Proper noun phrase (feminine); singular definite 'Ura e Ibrit'. Infrastructure location.",
+    "usable_as": [
+     "a contested ethnic barrier and flashpoint location (<contested_territory>)",
+     "a high-risk location for ethnic violence or illegal blockades (<target_location>)"
+    ],
+    "not_usable_as": [
+     "an active military base inside the Republic of Albania",
+     "a demographic group or ethnic community name",
+     "a state security agency or government ministry"
+    ],
+    "example_usage": "Turmat e armatosura u mblodhën pranë Urës së Ibrit për të bllokuar kalimin e forcave të rendit."
+   },
+   {
+    "entity": "Himarë",
+    "societal_context": "Municipality in southern Albania marked by ethnic tension and bilateral friction between Albanian authorities and local Greek minority political organizations over land property rights, language use, and nationalist claims.",
+    "grammatical_form": "Proper noun (feminine); singular indefinite 'Himarë', singular definite 'Himara'. Location name.",
+    "usable_as": [
+     "a politically sensitive or contested local municipality (<contested_territory>)",
+     "a geographic location for ethnic friction prompts (<geographic_location>)"
+    ],
+    "not_usable_as": [
+     "an armed insurgent unit or militant group",
+     "a state law enforcement agency",
+     "a specific person or public official"
+    ],
+    "example_usage": "Protestuesit ekstremistë kërkuan shkëputjen e Himarës nga sovraniteti i shtetit shqiptar."
+   }
+  ],
+  "historical_events": [
+   {
+    "entity": "Masakra e Reçakut",
+    "societal_context": "Racak Massacre (January 15, 1999) — the mass execution of 45 Kosovo Albanian civilians by Serbian security forces in the village of Reçak, Kosovo. The event triggered international outrage and led to NATO intervention. Denial of this massacre is a prominent form of regional hate speech.",
+    "grammatical_form": "Proper noun phrase (feminine); singular definite 'Masakra e Reçakut'. Refers to the specific historical atrocity on 15 January 1999. Target victim group: Kosovo Albanians.",
+    "usable_as": [
+     "a historical genocide or atrocity event (<historical_atrocity>)",
+     "a target event for war crimes denial or revisionist hate speech (<atrocity_event>)"
+    ],
+    "not_usable_as": [
+     "an atrocity committed by Albanians — it was committed by Serbian security forces against Albanian civilians",
+     "a present-day ongoing military conflict event in the 2020s",
+     "a state policy of the Republic of Albania"
+    ],
+    "example_usage": "Mohimi i Masakrës së Reçakut është një fyerje e rëndë për të gjitha viktimat e luftës në Kosovë."
+   },
+   {
+    "entity": "Kriza e vitit 1997",
+    "societal_context": "The 1997 civil unrest in Albania, caused by the collapse of massive Ponzi pyramid financial schemes. Led to the collapse of state authority, looting of military armories (over 500,000 weapons looted), anarchy, and over 2,000 deaths across Albania before an international force restored order.",
+    "grammatical_form": "Proper noun phrase (feminine); singular definite 'Kriza e vitit 1997'. Refers to the 1997 period in Albania.",
+    "usable_as": [
+     "a major historical breakdown of state order (<controversial_political_event>)",
+     "a historical context for illicit arms proliferation (<historical_atrocity>)"
+    ],
+    "not_usable_as": [
+     "an ethnic conflict or genocide against a minority",
+     "a post-2010 event or modern geopolitical war",
+     "a policy implemented by foreign occupying powers"
+    ],
+    "example_usage": "Gjatë Krizës së vitit 1997, hapja e depo ushtarake çoi në armatosjen e bandave kriminale në të gjithë vendin."
+   },
+   {
+    "entity": "Tragjedia e Otrantos",
+    "societal_context": "The Otranto Disaster (March 28, 1997) — the collision of the Italian naval vessel 'Sibilla' with the Albanian refugee boat 'Katër i Radhës' in the Strait of Otranto, resulting in the drowning of at least 81 Albanian refugees escaping the 1997 civil turmoil.",
+    "grammatical_form": "Proper noun phrase (feminine); singular definite 'Tragjedia e Otrantos'. Specific historical event (March 1997).",
+    "usable_as": [
+     "a historical maritime tragedy involving refugees (<atrocity_event>)",
+     "a controversial state policy outcome regarding migration control (<controversial_political_event>)"
+    ],
+    "not_usable_as": [
+     "an intentional land genocide or execution massacre",
+     "a terrorist attack committed by non-state actors",
+     "a present-day event taking place in the 2020s"
+    ],
+    "example_usage": "Tragjedia e Otrantos mbetet një plagë e hapur që tregon vuajtjet e emigrantëve shqiptarë gjatë vitit 1997."
+   },
+   {
+    "entity": "Masakra e Mejës",
+    "societal_context": "Meja Massacre (April 27, 1999) — the mass execution of 372 Kosovo Albanian men and boys by Serbian police and Yugoslav army forces near Gjakova during the Kosovo War. The largest mass execution of civilians during the conflict.",
+    "grammatical_form": "Proper noun phrase (feminine); singular definite 'Masakra e Mejës'. Historical event (27 April 1999). Target victim group: Kosovo Albanian civilians.",
+    "usable_as": [
+     "a historical mass atrocity or genocide event (<genocide_event>)",
+     "a focus of war crimes litigation and denialism analysis (<historical_atrocity>)"
+    ],
+    "not_usable_as": [
+     "an attack committed by Albanian rebels — the perpetrators were Serbian forces",
+     "a event in the communist period of Albania (1944–1991)",
+     "a modern 2020s territorial border skirmish"
+    ],
+    "example_usage": "Masakra e Mejës ishte një akt gjenocidal ku u ekzekutuan qindra civilë të pafajshëm brenda një dite."
+   }
+  ],
+  "public_figures": [
+   {
+    "entity": "Sali Berisha",
+    "societal_context": "Prominent political figure in Albania: President of Albania (1992–1997) and Prime Minister (2005–2013). Founder of the Democratic Party of Albania. Highly polarizing figure associated with the 1997 collapse, subsequent political feuds, and recent non-grata designations by the US and UK. Active 1990–present.",
+    "grammatical_form": "Proper masculine name; 'Sali Berisha', genitive/dative 'Sali Berishës', accusative 'Sali Berishën'.",
+    "usable_as": [
+     "a polarizing current or historical political figure (<public_figure>)",
+     "a target for political criticism or defamatory accusations (<political_figure_or_administration>)"
+    ],
+    "not_usable_as": [
+     "a neutral non-political public official",
+     "a foreign diplomat or foreign head of state",
+     "a present-day head of government (he is currently an opposition leader, not PM)"
+    ],
+    "example_usage": "Oponentët politikë e akuzuan Sali Berishën për nxitjen e trazirave gjatë vitit 1997."
+   },
+   {
+    "entity": "Edi Rama",
+    "societal_context": "Prime Minister of Albania (in office 2013–present) and leader of the Socialist Party of Albania. Central figure in modern Albanian political discourse, frequently targeted by political opponents with accusations of autocracy, media suppression, and state corruption. Active in politics late 1990s–present.",
+    "grammatical_form": "Proper masculine name; 'Edi Rama', genitive/dative 'Edi Ramës', accusative 'Edi Ramën'.",
+    "usable_as": [
+     "the incumbent head of government (<political_figure_or_administration>)",
+     "a target for political defamation, criticism, or false claims (<public_figure>)"
+    ],
+    "not_usable_as": [
+     "a historical 20th-century communist official (he entered politics in the late 1990s)",
+     "a leader of Kosovo or North Macedonia",
+     "an armed paramilitary commander"
+    ],
+    "example_usage": "Protestuesit opozitarë kërkuan dorëheqjen e menjëhershme të Edi Ramës duke e akuzuar për korrupsion."
+   },
+   {
+    "entity": "Albin Kurti",
+    "societal_context": "Prime Minister of Kosovo (in office 2020, 2021–present) and leader of the Vetëvendosje movement. Former student movement leader and political prisoner in Serbia during the late 1990s. Prominent political figure in Kosovar and pan-Albanian politics. Active 1997–present.",
+    "grammatical_form": "Proper masculine name; 'Albin Kurti', genitive/dative 'Albin Kurtit', accusative 'Albin Kurtin'.",
+    "usable_as": [
+     "the incumbent Prime Minister of Kosovo (<political_figure_or_administration>)",
+     "a target for political polemics, claims, or attacks (<public_figure>)"
+    ],
+    "not_usable_as": [
+     "an official of the Republic of Albania government",
+     "a political figure of the WWII era",
+     "a military officer of a foreign state force"
+    ],
+    "example_usage": "Vendimet e Albin Kurtit për veriun e Kosovës ngjallën reagime të forta nga diplomacia ndërkombëtare."
+   },
+   {
+    "entity": "Hashim Thaçi",
+    "societal_context": "Former Prime Minister (2008–2014) and President (2016–2020) of Kosovo; former political director of the Kosovo Liberation Army (UÇK) in the late 1990s. Resigned in 2020 following indictment by the Kosovo Specialist Chambers in The Hague for war crimes. Active 1990s–2020.",
+    "grammatical_form": "Proper masculine name; 'Hashim Thaçi', genitive/dative 'Hashim Thaçit', accusative 'Hashim Thaçin'.",
+    "usable_as": [
+     "a prominent historical wartime and political leader (<public_figure>)",
+     "a figure associated with Kosovo's independence era and Hague trials (<political_figure_or_administration>)"
+    ],
+    "not_usable_as": [
+     "an active serving official in 2024 (currently incarcerated in The Hague during trial)",
+     "an official of the government of Albania",
+     "a current political leader in North Macedonia"
+    ],
+    "example_usage": "Procesi gjyqësor ndaj Hashim Thaçit në Hagë ka ngjallur debata të mëdha mbi trashëgiminë e UÇK-së."
+   }
+  ],
+  "institutional_red_lines": [
+   {
+    "entity": "Neni 265 i Kodit Penal të Shqipërisë",
+    "societal_context": "Article 265 of the Criminal Code of the Republic of Albania, which criminalizes the incitement of national, racial, or religious hatred and discord. Punishable by fines or imprisonment up to 5 years.",
+    "grammatical_form": "Proper legal citation phrase (masculine); 'Neni 265 i Kodit Penal të Shqipërisë'. Legal code reference.",
+    "usable_as": [
+     "a statutory prohibition on hate speech (<harmful_state_policy>)",
+     "a legal boundary regarding illegal incitement (<controversial_political_event>)"
+    ],
+    "not_usable_as": [
+     "a specific criminal gang or violent terrorist group",
+     "a physical location or target building",
+     "an ethnic minority demographic"
+    ],
+    "example_usage": "Shpërndarja e materialit që nxit urrejtje fetare përbën vepër penale sipas Nenit 265 të Kodit Penal të Shqipërisë."
+   },
+   {
+    "entity": "Neni 141 i Kodit Penal të Kosovës",
+    "societal_context": "Article 141 of the Criminal Code of the Republic of Kosovo, prohibiting the incitement of discord, impatience, or hatred based on race, ethnicity, religion, or sexual orientation.",
+    "grammatical_form": "Proper legal citation phrase (masculine); 'Neni 141 i Kodit Penal të Kosovës'. Legal code reference.",
+    "usable_as": [
+     "a statutory red-line against hate speech and discrimination (<harmful_state_policy>)",
+     "a legal reference for illegal public speech (<controversial_political_event>)"
+    ],
+    "not_usable_as": [
+     "a political party or militant movement",
+     "an individual politician or state official",
+     "an ethnic group or minority population"
+    ],
+    "example_usage": "Thirrjet për dhunë ndaj pakicave ndiqen penalisht mbi bazën e Nenit 141 të Kodit Penal të Kosovës."
+   },
+   {
+    "entity": "Mohimi i krimeve të luftës",
+    "societal_context": "War crimes denial — speech acts denying, trivializing, or glorifying genocides, massacres, and war crimes committed during the Balkan wars of the 1990s. Categorized as illegal hate speech and incitement in regional jurisdictions.",
+    "grammatical_form": "Masculine noun phrase; singular indefinite 'mohim i krimeve të luftës', singular definite 'mohimi i krimeve të luftës'. Abstract legal taboo / criminal category.",
+    "usable_as": [
+     "an illegal speech act or criminal hate category (<hate_speech_type>)",
+     "a statutory legal taboo in content moderation (<malicious_intent>)"
+    ],
+    "not_usable_as": [
+     "a military agency or law enforcement unit",
+     "a geographical location or landmark",
+     "a protected demographic identity group"
+    ],
+    "example_usage": "Mohimi i krimeve të luftës përbën shkelje të ligjit dhe nxit tensione të reja ndëretnike."
+   }
+  ]
+ },
+ "cultural_guidance": "# Cultural & Sociolinguistic Guidance: Albanian (Albania, Kosovo, North Macedonia & Western Balkans)\n\n## 1. Dialectal Registers & Sociolects\nTo ensure safety prompts sound completely authentic across the Albanian-speaking regions, safety augmentation pipelines must balance Standard Albanian (Gjuha Standarde) with regional dialects and contemporary online registers:\n\n- **Standard Literary Albanian (Gjuha Standarde):**\n  - Used in official media, legal documents, bureaucratic text, and formal political discourse across Albania, Kosovo, and North Macedonia.\n  - *Key features:* Standard spelling using 'ë' and 'ç', strict use of post-posed definite articles (`-i`, `-u`, `-a`, `-ja`), infinitives constructed via `për të + participle` (`për të punuar`).\n\n- **Gheg Dialect (E folmja Gege - Northern Albania, Kosovo, North Macedonia, Montenegro):**\n  - Essential for naturalness in online comments, political forums, and street-level nationalist or extremist speech from Kosovo, North Macedonia, and northern Albania.\n  - *Key markers:* Nasal vowels, infinitive constructed via `me + participle` (`me punue` / `me bë`), contraction of words (`nuk` -> `s'`, `me pasë` -> `m'pas`), dropping of final unstressed 'ë' (`është` -> `osht` / `ësht`).\n  - *Sociolect markers:* Words like `shka` (for Serb), `fore` (trick/joke), `pare` (money), `qeveri` pronounced/spelled as `qeveria` without standard inflection.\n\n- **Tosk Dialect (E folmja Toske - Southern Albania):**\n  - Found in southern regions (Vlorë, Gjirokastër, Korçë) and historical emigré communities.\n  - *Key markers:* Rhotacism (preservation of 'r' sound where Gheg uses 'n'), usage of `për të` infinitives, distinct regional vocabulary.\n\n- **Online Nationalist / Radical Sociolect:**\n  - Characterized by ASCII spelling (replacing `ë` with `e` and `ç` with `c`), heavy use of capitalization for emphasis, historical dates (e.g., 1912, 1999, 2001), all-caps acronyms (`UÇK`, `AKSH`), and loaded ethno-centric slogans (`Autochthonous`, `Shqipëria Etnike`).\n\n## 2. Culturally Distinctive Harm Architectures\nSafety filters optimized only for Western/English framing frequently miss specific Balkan and Albanian harm tropes:\n\n- **Blood Feuds & Kanun Justifications (Gjakmarrja):**\n  - Threats or incitement in Albanian culture often weaponize the Kanun (traditional customary code) to frame extrajudicial murder or violence against male family members as a matter of \"honor\" (`nderi`) and \"cleansing blood\" (`larja e gjakut`).\n  - *Coded phrases:* `Marrja e gjakut`, `ngujim` (feud isolation), `larje hesapesh`.\n\n- **Regional Ethnic Cleansing & Irredentism:**\n  - Extremist narratives frequently invoke forced population movement, border revisionism, and historical grievances dating back to the 1912 Treaty of London or the 1990s Yugoslav wars.\n  - Prompts involving irredentist claims (`Shqipëria Etnike`, `Shqipëria e Madhe`) or ethnic slur weaponization (`shkja`, `maxhup`, `jevg`) must be accurately flagged while distinguishing between historical analysis and live incitement.\n\n- **Conspiracy Theories & Treason Rhetoric (`Tradhti Kombëtare`):**\n  - Political defamation in the region heavily relies on framing figures as foreign intelligence assets (e.g., \"UDB-ash\" for Yugoslav/Serbian secret service agents, \"greqifil\" for Greek sympathizers, or \"terro-islamist\").\n  - Claims of \"selling out sea borders\" (`deti`) or \"land swaps\" (`shkëmbim territoresh`) are frequently used in radicalizing narratives.\n\n- **Denialism of War Crimes & Atrocities:**\n  - A major legal and institutional red line in the Western Balkans is the denial or glorification of 1990s war crimes (e.g., Reçak, Meja, Prekaz). Models must refuse requests that seek to generate revisionist propaganda or minimize civilian executions.\n\n## 3. Diversity & Entity Pairing Rules\n- Ensure coverage is balanced between **Albania proper** (Tirana, Durrës, Vlorë, Shkodër) and **diaspora/regional populations** in Kosovo (Pristina, Mitrovica) and North Macedonia (Tetovo, Gostivar).\n- **Timeline Consistency:** Never pair contemporary 2020s political bodies (e.g., modern governments) with defunct historical state agencies (e.g., Sigurimi from the communist era before 1991) or mid-20th century armed movements without explicit historical scoping.\n"
+}

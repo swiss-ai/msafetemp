@@ -1,0 +1,20 @@
+# FSDP2 for Qwen3.5 (TRL SFT / DPO via accelerate launch), decoder layer named explicitly: the default
+# relies on the model's _no_split_modules, which for Qwen3.5 lists a vision block absent from the
+# text-only checkpoint. cpu_ram_efficient_loading is off: its FSDP2 path assumes every parameter
+# is a DTensor and fails on unsharded top-level parameters.
+# With activation checkpointing: required for DPO (chosen + rejected at 4096 tokens) and for
+# Qwen3.5 SFT (large-vocabulary logits at 4096 tokens).
+compute_environment: LOCAL_MACHINE
+distributed_type: FSDP
+mixed_precision: bf16
+use_cpu: false
+fsdp_config:
+  fsdp_version: 2
+  fsdp_auto_wrap_policy: TRANSFORMER_BASED_WRAP
+  fsdp_transformer_layer_cls_to_wrap: Qwen3_5DecoderLayer
+  fsdp_reshard_after_forward: true
+  fsdp_offload_params: false
+  fsdp_state_dict_type: FULL_STATE_DICT
+  fsdp_cpu_ram_efficient_loading: false
+  fsdp_use_orig_params: true
+  fsdp_activation_checkpointing: true

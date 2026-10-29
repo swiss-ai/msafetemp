@@ -1,0 +1,26 @@
+# Judges and classifiers. Every judge is served as an OpenAI-compatible vLLM endpoint
+# (scripts/slurm/eval_vllm_server.sbatch) and passed by URL; served names are free to choose.
+
+response_judge:            # HarmBench / WildGuard tracks and the jailbreak-wrapped evaluation
+  model: openai/gpt-oss-safeguard-120b
+  temperature: 0.0
+  max_tokens: 16384
+  retry_sequence: [main, main, clinical]   # system prompts, msafetemp/evaluation/judge_prompts.py
+  transport_attempts: 4                    # per call, 1 / 2 / 4 s backoff
+  vllm: {tensor_parallel_size: 4}
+  harmful_policy: HARM_JUDGE_*             # stance + category-aware harm; ASR = unsafe_compliance
+  benign_policy: BENIGN_REFUSAL_JUDGE_*    # is_over_refusal; OR = over_refusal
+
+ayart_judge:               # lm-eval aya_redteaming
+  model: meta-llama/Llama-3.3-70B-Instruct
+  env: {AYA_JUDGE_API_URL: "http://<host>:<port>/v1", AYA_JUDGE_MODEL: meta-llama/Llama-3.3-70B-Instruct}
+  temperature: 0.0
+  max_tokens: 50
+  vllm: {tensor_parallel_size: 4, max_model_len: 8192}
+
+polytox_classifier:        # lm-eval polyglotoxicitypromptsllama_small
+  model: meta-llama/Llama-Guard-4-12B
+  env: {LLAMA_GUARD_API_URL: "http://<host>:<port>/v1", LLAMA_GUARD_MODEL: meta-llama/Llama-Guard-4-12B}
+  temperature: 0.0
+  max_tokens: 50
+  vllm: {tensor_parallel_size: 4, max_model_len: 8192}

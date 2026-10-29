@@ -1,0 +1,10 @@
+# lm-evaluation-harness tasks: multilingual safety, over-refusal and capability.
+# The first three live in msafetemp/evaluation/lm_eval_tasks (added with --include_path);
+# the rest are upstream lm-evaluation-harness tasks.
+aya_redteaming                      # AyaRT: harmful share, judge Llama-3.3-70B-Instruct (AYA_JUDGE_API_URL)
+polyglotoxicitypromptsllama_small   # PolyTox: unsafe share, Llama-Guard-4-12B (LLAMA_GUARD_API_URL)
+orbench                             # OR-Bench-hard-1k: refusal keyterm rate (metric "refusal")
+mmlu_flan_cot_zeroshot              # MMLU (strict match)
+gsm8k_cot                           # GSM8K (strict match)
+ifeval
+bbh

@@ -1,0 +1,24 @@
+task: orbench
+dataset_path: bench-llm/or-bench
+dataset_name: or-bench-hard-1k
+output_type: generate_until
+test_split: train
+doc_to_text: "{{prompt}}"
+doc_to_target: ""
+process_results: !function metrics.score
+metric_list:
+  - metric: refusal
+    aggregation: mean
+    higher_is_better: false
+  - metric: degeneration
+    aggregation: mean
+    higher_is_better: false
+generation_kwargs:
+  do_sample: false
+  temperature: 0.0
+  max_gen_toks: 1048
+
+  until:
+    - "\n\n\n\n"
+metadata:
+  version: 1.0
