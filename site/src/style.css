@@ -220,7 +220,8 @@ h1 .tsub {
 .tw.out { opacity: 0; transform: translateY(-0.4em) rotateX(65deg) scale(0.88); }
 .tw.in { opacity: 0; transform: translateY(0.4em) rotateX(-65deg) scale(0.88); transition: none; }
 .authors { margin-top: 28px; font-size: 18px; color: var(--ink); }
-.authors span { font-weight: 500; }
+.authors a { font-weight: 500; color: inherit; text-decoration: underline; text-decoration-color: var(--brace); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.authors a:hover { color: var(--slot); text-decoration-thickness: 2px; }
 .affil { margin-top: 2px; font-size: 15.5px; color: var(--faint); }
 .links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 26px; }
 .lbtn {
