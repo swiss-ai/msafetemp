@@ -1,7 +1,7 @@
 # MSafeTemp: Template-based Multilingual Safety Data Augmentation
 
-[![arXiv](https://img.shields.io/badge/arXiv-2610.15542-b31b1b)](https://arxiv.org/abs/2610.15542)
-[![Paper](https://img.shields.io/badge/Paper-HuggingFace-yellow)](https://huggingface.co/papers/2610.15542)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.40516-b31b1b)](https://arxiv.org/abs/2610.40516)
+[![Paper](https://img.shields.io/badge/Paper-HuggingFace-yellow)](https://huggingface.co/papers/2610.40516)
 [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow)](https://huggingface.co/datasets/swiss-ai/MSafeTemp)
 
 This repository contains the official implementation of *"How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates"*.
@@ -145,10 +145,13 @@ The code is released under the [MIT License](LICENSE).
 ## Citation
 
 ```bibtex
-@misc{neuwinger2026msafetemp,
-  title  = {How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates},
-  author = {Neuwinger, Max and Yukhymenko, Hanna and Schlag, Imanol},
-  year   = {2026},
-  url    = {https://github.com/swiss-ai/msafetemp}
+@misc{neuwinger2026ialignedmodelscaling,
+      title={How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates}, 
+      author={Max Neuwinger and Hanna Yukhymenko and Imanol Schlag},
+      year={2026},
+      eprint={2610.40516},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2610.40516}, 
 }
 ```
