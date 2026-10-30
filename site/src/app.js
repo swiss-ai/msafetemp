@@ -2,7 +2,7 @@
 "use strict";
 
 /* Set this to the arXiv URL once the paper is public; the hero button switches on by itself. */
-var PAPER_URL = "";
+var PAPER_URL = "https://arxiv.org/abs/2610.40516";
 
 var D = JSON.parse(document.getElementById("site-data").textContent);
 var ROOT = document.documentElement;

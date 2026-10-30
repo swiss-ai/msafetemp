@@ -4,6 +4,7 @@ Source of https://swiss-ai.github.io/msafetemp/ (this folder only; the rest of t
 
 Project page for **How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates**.
 
+- Paper: https://arxiv.org/abs/2610.40516
 - Dataset: https://huggingface.co/datasets/swiss-ai/MSafeTemp
 
 ## Build
